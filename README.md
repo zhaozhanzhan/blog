@@ -22,7 +22,7 @@
 
 **相关配置:** 修改api.js文件里面的接口地址
 
-**效果预览:** ![GIF.gif](https://www.lpyhutu.cn/img/WeChat.0f48788d.jpg)
+**效果预览:** ![小程序](https://www.lpyhutu.cn/img/WeChat.0f48788d.jpg)
 
 #### Socket服务(wss)
 

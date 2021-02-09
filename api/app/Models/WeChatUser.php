@@ -20,8 +20,9 @@ class WeChatUser extends Model
      */
     public function login($code)
     {
-        $appid = 'wx5004d86351c41b88';
-        $appsecret = '9290a7147a8509e3d4a147f7491552c6';
+        $appid =env("WECHAT_APPID");
+        $appsecret = env("WECHAT_APPSECRET");
+
         $url = "https://api.weixin.qq.com/sns/jscode2session?appid=" . $appid . "&secret=" . $appsecret . "&js_code=" . $code . "&grant_type=authorization_code";
         $res = file_get_contents($url);
         $openid = json_decode($res)->openid;

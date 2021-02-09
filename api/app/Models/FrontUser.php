@@ -221,7 +221,7 @@ class FrontUser extends Model
      */
     public function getAddress($ip)
     {
-        $key = "8d5929b1c96051c9e928f407e0d11a48";
+        $key = env("MAP_KEY");
         $output = "JSON";
         $url = "https://restapi.amap.com/v3/ip?key=$key&ip=$ip&output=$output";
         $res = file_get_contents($url);

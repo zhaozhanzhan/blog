@@ -1,0 +1,13 @@
+@for $i from 6 through 10 {
+    .b-font-size-#{$i*2}px {
+        font-size: 2px * $i;
+    }
+}
+
+@mixin line-clamp($line) {
+    display: -webkit-box;
+    display: -moz-box;
+    overflow: hidden;
+    -webkit-line-clamp: $line;
+    -webkit-box-orient: vertical;
+}

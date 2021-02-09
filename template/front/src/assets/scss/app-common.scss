@@ -1,0 +1,16 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+.el-pagination.is-background .el-pager li:not(.disabled).active {
+    background: $b-bg-one;
+}
+
+.el-pagination.is-background .el-pager li:not(.disabled):hover {
+    color: $b-bg-one;
+}
+
+.el-pagination.is-background .el-pager li:not(.disabled).active {
+    color: #fff;
+}
